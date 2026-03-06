@@ -1,32 +1,50 @@
-"use client";
-import { motion } from "framer-motion";
-import { MapPin, Clock } from "lucide-react";
-import { useEffect, useState } from "react";
+"use client"
 
-export const Header = () => {
-  const [time, setTime] = useState("");
+import { MapPin } from "lucide-react"
+import { useEffect, useState } from "react"
+import { ThemeToggle } from "./ThemeToggle"
+
+export default function Header() {
+  const [mounted, setMounted] = useState(false)
+  const [time, setTime] = useState("")
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date().toLocaleTimeString("en-US", { hour12: true }));
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
+    setMounted(true)
+
+    const updateTime = () => {
+      setTime(
+        new Date().toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: true,
+        })
+      )
+    }
+
+    updateTime()
+    const timer = setInterval(updateTime, 1000)
+
+    return () => clearInterval(timer)
+  }, [])
+
+  if (!mounted) return null
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="flex justify-between items-center w-full px-4 py-2 text-sm font-medium text-zinc-500 dark:text-zinc-400"
-    >
-      <div className="flex items-center gap-2">
-        <MapPin size={16} />
-        <span>Zurich, Switzerland</span>
+    <header className="max-w-[640px] mx-auto md:mt-12 mt-3 px-3">
+      <div className="flex justify-between items-center px-5 py-5 md:py-3 rounded-full bg-[var(--card)] border border-[var(--card-border)]">
+
+        <div className="flex items-center gap-1.5 text-[13px] font-medium text-[var(--text-muted)]">
+          <MapPin size={14} strokeWidth={2.5}/>
+          <span>Zurich, Switzerland</span>
+        </div>
+
+        <div className="flex items-center gap-3 text-[13px] font-medium text-[var(--text-muted)] tabular-nums">
+          <span>{time}</span>
+          <ThemeToggle />
+        </div>
+
       </div>
-      <div className="flex items-center gap-2">
-        <span>{time || "Loading..."}</span>
-        <Clock size={16} />
-      </div>
-    </motion.div>
-  );
-};
+    </header>
+  )
+}
