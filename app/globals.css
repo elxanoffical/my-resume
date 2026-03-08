@@ -6,6 +6,8 @@
   --card: #FFFFFF;
   --card-border: #E5E5E5;
   --text-muted: #737373;
+  --btn-bg: #EBEBEB; /* Light mode buton fonu */
+  --btn-hover: #c7c7c757; /* Light mode hover (bir az daha tünd) */
 }
 
 .dark {
@@ -14,6 +16,8 @@
   --card: #1f1f1f;
   --card-border: #1F1F1F;
   --text-muted: #A1A1A1;
+  --btn-bg: #1F1F1F; /* Dark mode buton fonu */
+  --btn-hover: #2A2A2A; /* Dark mode hover (bir az daha açıq) */
 }
 
 body {

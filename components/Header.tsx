@@ -32,10 +32,10 @@ export default function Header() {
 
   return (
     <header className="max-w-[640px] mx-auto md:mt-12 mt-3 px-3">
-      <div className="flex justify-between items-center px-5 py-5 md:py-3 rounded-full bg-[var(--card)] border border-[var(--card-border)]">
+      <div className="flex justify-between items-center px-4 py-5 md:py-3 rounded-full bg-[var(--card)] border border-[var(--card-border)]">
 
-        <div className="flex items-center gap-1.5 text-[13px] font-medium text-[var(--text-muted)]">
-          <MapPin size={14} strokeWidth={2.5}/>
+        <div className="flex items-center gap-1.5 text-[13.5px] font-medium text-[var(--text-muted)]">
+          <MapPin size={16} strokeWidth={2.5}/>
           <span>Zurich, Switzerland</span>
         </div>
 
