@@ -1,26 +1,21 @@
 @import "tailwindcss";
 
+/* Tailwind v4 üçün class əsaslı dark mode təyinatı */
+@custom-variant dark (&:is(.dark, .dark *));
+
 :root {
   --background: #F2F2F2;
   --foreground: #1A1A1A;
-  --card: #FFFFFF;
-  --card-border: #E5E5E5;
-  --text-muted: #737373;
-  --btn-bg: #EBEBEB; /* Light mode buton fonu */
-  --btn-hover: #c7c7c757; /* Light mode hover (bir az daha tünd) */
 }
 
 .dark {
   --background: #141414;
   --foreground: #FFFFFF;
-  --card: #1f1f1f;
-  --card-border: #1F1F1F;
-  --text-muted: #A1A1A1;
-  --btn-bg: #1F1F1F; /* Dark mode buton fonu */
-  --btn-hover: #2A2A2A; /* Dark mode hover (bir az daha açıq) */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  /* Rənglər dəyişərkən daha yumşaq (smooth) keçid olması üçün transition */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }

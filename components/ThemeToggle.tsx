@@ -13,13 +13,13 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="transition-opacity hover:opacity-70  text-neutral-500 dark:text-neutral-400"
+      className="transition-opacity hover:opacity-70  text-neutral-500 dark:text-neutral-400 cursor-pointer"
       aria-label="Toggle Theme"
     >
       {theme === "dark" ? (
-        <Moon size={16} strokeWidth={2} />
+        <Moon size={18} strokeWidth={2} />
       ) : (
-        <Sun size={16} strokeWidth={2} />
+        <Sun size={18} strokeWidth={2} />
       )}
     </button>
   );

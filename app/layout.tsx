@@ -1,7 +1,7 @@
 "use client"
 
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
 import "./globals.css";
 
@@ -19,11 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         {mounted && (
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem={false}
-          >
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
             {children}
           </ThemeProvider>
         )}
