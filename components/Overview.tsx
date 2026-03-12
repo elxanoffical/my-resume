@@ -18,14 +18,14 @@ export default function Overview() {
         <div
           className="inline-flex items-center justify-center px-2 py-2 rounded-lg mb-4
                         bg-neutral-200 text-neutral-700
-                        dark:bg-neutral-700/40 dark:text-neutral-300
+                        dark:bg-neutral-700/70 dark:text-neutral-300
                         text-[12px] md:text-[11px] font-bold tracking-wider"
         >
           Overview
         </div>
 
         <div
-          className="space-y-6 leading-[1.7] text-[15px] md:text-[12px] font-medium
+          className="space-y-4.5 leading-[1.7] text-[15px] md:text-[12px] font-medium
                         text-neutral-600 dark:text-neutral-300"
         >
           <p>
