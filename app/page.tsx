@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Overview from "@/components/Overview";
 import Projects from "@/components/Projects";
+import Tools from "@/components/Tools";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <Overview/>  
       <Projects/>
       <Experience/> 
-      <Education/>
+      <Education/> 
+      <Tools/>
     </div>
   );
 }
