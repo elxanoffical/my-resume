@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Overview from "@/components/Overview";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Overview/>  
       <Projects/>
+      <Experience/>
     </div>
   );
 }
