@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight  } from "lucide-react";
 
 const projects = [
   {
@@ -38,7 +38,7 @@ export default function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="max-w-[640px] mx-auto px-3 mb-4"
+      className="max-w-[640px] mx-auto px-3 mb-2"
     >
       <div className="rounded-[28px] shadow-sm px-4 py-4 border
                       bg-white border-neutral-200
@@ -57,7 +57,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="group cursor-pointer border border-neutral-200 dark:border-neutral-700/40 rounded-[22px] p-3 hover:bg-neutral-800/20 transitions-colors"
+              className="group cursor-pointer border border-neutral-200 dark:border-neutral-700/40 rounded-[22px] p-3 hover:bg-neutral-100/30 hover:dark:bg-neutral-800/20 transitions-colors"
             >
               {/* Şəkil Konteyneri */}
               <div className="relative aspect-[4/3] w-full mb-3 overflow-hidden rounded-[22px] 
@@ -82,12 +82,11 @@ export default function Projects() {
                 </div>
                 
                 {/* Ox Düyməsi */}
-                <div className="w-8 h-8 rounded-full flex items-center justify-center
+                <button className="w-10 h-10 md:w-8 md:h-8 rounded-lg flex items-center justify-center
                                 bg-neutral-100 dark:bg-neutral-700/50 
-                                group-hover:bg-neutral-200 dark:group-hover:bg-neutral-600
-                                transition-colors">
-                  <ArrowUpRight size={16} className="text-neutral-600 dark:text-neutral-300" />
-                </div>
+                                group-hover:w-12 transitions-all duration-300">
+                  <ArrowRight  size={16} className="text-neutral-600 dark:text-neutral-300" />
+                </button>
               </div>
             </motion.div>
           ))}

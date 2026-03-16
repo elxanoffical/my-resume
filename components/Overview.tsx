@@ -8,7 +8,7 @@ export default function Overview() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="max-w-[640px] mx-auto px-3 mb-4"
+      className="max-w-[640px] mx-auto px-3 mb-2"
     >
       <div
         className="mt-2 rounded-[28px] shadow-sm px-4 py-4 border
