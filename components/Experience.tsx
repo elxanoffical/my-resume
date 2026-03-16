@@ -57,8 +57,8 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="p-4 rounded-[22px] border border-neutral-100 dark:border-neutral-700/50 
-                         bg-neutral-50/50 dark:bg-neutral-900/20"
+              className="p-4 rounded-[22px] border border-neutral-200 dark:border-neutral-700/50 
+                         dark:bg-neutral-900/20"
             >
               {/* Ana Konteyner: Loqo və Mətnləri yan-yana gətirir */}
               <div className="flex flex-col md:flex-row items-start gap-4">
