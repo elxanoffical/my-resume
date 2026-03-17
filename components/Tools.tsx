@@ -52,8 +52,8 @@ export default function Tools() {
           {tools.map((tool, index) => (
             <div 
               key={index}
-              className="p-4 rounded-[16px] border border-neutral-100 dark:border-neutral-700/50 
-                         bg-neutral-50/50 dark:bg-neutral-900/20 flex items-center gap-4"
+              className="p-4 rounded-[16px] border border-neutral-100 dark:border-neutral-700/50 cursor-pointer 
+                         dark:bg-neutral-900/20 flex items-center gap-4 hover:bg-neutral-100/50 dark:hover:bg-neutral-800/50 transition-all duration-150"
             >
               {/* Tool İkonu */}
               <div className="relative w-15 h-15 md:w-13 md:h-13 shrink-0 overflow-hidden rounded-lg">
