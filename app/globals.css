@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* Tailwind v4 üçün class əsaslı dark mode təyinatı */
 @custom-variant dark (&:is(.dark, .dark *));
 
@@ -12,6 +13,8 @@
   --background: #141414;
   --foreground: #FFFFFF;
 }
+
+
 
 body {
   background: var(--background);

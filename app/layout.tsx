@@ -3,6 +3,7 @@
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         {mounted && (
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-            {children}
+           <SmoothScroll>
+          {children}
+        </SmoothScroll>
           </ThemeProvider>
         )}
       </body>
