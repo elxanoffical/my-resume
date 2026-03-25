@@ -26,7 +26,7 @@ export default function Overview() {
 
         <div
           className="space-y-4.5 leading-[1.7] text-[15px] md:text-[12px] font-medium
-                        text-neutral-600 dark:text-neutral-300"
+                        text-neutral-600 dark:text-neutral-300/80"
         >
           <p>
             Senior Designer with a strong background in brand and digital
