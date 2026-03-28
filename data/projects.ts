@@ -8,7 +8,7 @@ export const projectsData = [
     client: "Club Rova",
     services: "Web Design, Brand Identity",
     description: "A premium streetwear brand focusing on minimalist aesthetics and high-quality materials.",
-    image: "/projects/TurboCar/turboCar1.png", // Ana səhifə üçün
+    image: "/projects/TurboCar/turboCar1.png", 
     images: ["/projects/TurboCar/turboCar1.png", "/projects/TurboCar/turboCar2.png", "/projects/TurboCar/turboCar3.png", "/projects/TurboCar/turboCar4.png"] 
   },
   {
@@ -20,8 +20,8 @@ export const projectsData = [
     client: "Sorne Labs",
     services: "Package Design, UI/UX",
     description: "Sorne provides eco-friendly personal care solutions. We created a visual language that communicates purity.",
-    image: "/project2.png",
-    images: ["/project2.png", "/project2-2.png", "/project2-3.png", "/project2-4.png"]
+    image: "/projects/FitZone/fitzone1.png",
+    images: ["/projects/FitZone/fitzone1.png", "/projects/FitZone/fitzone2.png", "/projects/FitZone/fitzone3.png", "/projects/FitZone/fitzone4.png"]
   },
   {
     id: "azra",

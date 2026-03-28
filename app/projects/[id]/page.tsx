@@ -6,8 +6,6 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArrowLeft, ArrowRight, MapPin, Moon } from "lucide-react";
 import { projectsData } from "@/data/projects";
-import Contact from "@/components/Contact";
-import Header from "@/components/Header";
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -22,7 +20,7 @@ export default function ProjectPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-[640px] mx-auto px-3 mt-3"
+      className="max-w-[640px] mx-auto px-3 mt-2"
     >
       {/* 2. Info Card (Ayrıca Div) */}
       <div
@@ -86,9 +84,8 @@ export default function ProjectPage() {
         </div>
       </div>
 
-
       {/* 3. Images Gallery */}
-      <div className="space-y-6 mb-4 bg-white dark:bg-neutral-800/60 rounded-[28px] p-4">
+      <div className="space-y-6 mb-2 bg-white dark:bg-neutral-800/60 rounded-[28px] p-4">
         {project.images.map((img, idx) => (
           <div
             key={idx}
@@ -100,7 +97,7 @@ export default function ProjectPage() {
               width={1200} // Şəklin keyfiyyəti üçün yüksək rəqəm veririk
               height={0} // Hündürlük avtomatik hesablanacaq
               sizes="100vw"
-              className="w-full" // Şəkil tam genişlikdə və orijinal hündürlükdə olacaq
+              className="w-full h-auto block" // Şəkil tam genişlikdə və orijinal hündürlükdə olacaq
               priority={idx === 0} // İlk şəklin tez yüklənməsi üçün
             />
           </div>
@@ -116,12 +113,14 @@ export default function ProjectPage() {
           <Link href={`/projects/${nextProject.id}`}>
             <div className="group flex items-center justify-between p-3 rounded-[22px] bg-neutral-50 dark:bg-neutral-900/40 border border-neutral-100 dark:border-neutral-700/50 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-11 relative rounded-lg overflow-hidden bg-neutral-200">
+                <div className="w-full relative rounded-lg overflow-hidden bg-neutral-200">
                   <Image
                     src={nextProject.image}
                     alt="Next"
-                    fill
-                    className="object-cover"
+                    width={1200} // Şəklin keyfiyyəti üçün yüksək rəqəm veririk
+                    height={0} // Hündürlük avtomatik hesablanacaq
+                    sizes="100vw"
+                    className="w-full h-auto block"
                   />
                 </div>
                 <span className="font-bold text-[16px] dark:text-white">
