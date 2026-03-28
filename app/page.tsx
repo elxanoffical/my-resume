@@ -9,15 +9,13 @@ import Tools from "@/components/Tools";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pb-20">
-      <Header />
+    <div className="min-h-screen pb-">
       <Hero />
       <Overview/>  
       <Projects/>
       <Experience/> 
       <Education/> 
       <Tools/>
-      <Contact/>
     </div>
   );
 }

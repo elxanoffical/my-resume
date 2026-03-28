@@ -38,7 +38,7 @@ export default function Experience() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.4 }}
-      className="max-w-[640px] mx-auto px-3 mb-4"
+      className="max-w-[640px] mx-auto px-3 mb-2"
     >
       <div className="rounded-[28px] shadow-sm px-4 py-4 border
                       bg-white border-neutral-200
