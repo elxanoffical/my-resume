@@ -42,11 +42,11 @@ export default function Contact() {
                 <span className="text-[12px] md:text-[16px] font-semibold text-neutral-800 dark:text-neutral-100">
                   {contact.value}
                 </span>
-                <div className="w-8 h-8 rounded-lg group-hover:w-11 transition-all duration-300 bg-neutral-200/50 dark:bg-neutral-700/50 
+                <button className="w-8 h-8 rounded-lg group-hover:w-11 transition-all duration-300 bg-neutral-200/50 dark:bg-neutral-700/50 
                                 flex items-center justify-center 
                                 dark:group-hover:bg-neutral-700">
                   <ArrowRight size={16} className="text-neutral-600 dark:text-neutral-400" />
-                </div>
+                </button>
               </div>
             </a>
           ))}

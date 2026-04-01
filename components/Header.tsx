@@ -32,8 +32,7 @@ export default function Header() {
   return (
     <header className="max-w-[640px] mx-auto md:mt-12 mt-3 px-3">
       <div className="flex justify-between items-center px-4 py-5 md:py-3 rounded-full
-                      bg-white border border-neutral-200
-                      dark:bg-neutral-800/70 dark:border-neutral-900">
+                      bg-white dark:bg-neutral-800/70 ">
 
         <div className="flex items-center gap-1.5 text-[13.5px] font-medium
                         text-neutral-500 dark:text-neutral-400">
