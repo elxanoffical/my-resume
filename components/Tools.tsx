@@ -35,9 +35,9 @@ export default function Tools() {
       transition={{ duration: 0.5, delay: 0.6 }}
       className="max-w-[640px] mx-auto px-3 mb-2"
     >
-      <div className="rounded-[28px] shadow-sm px-4 py-4 border
-                      bg-white border-neutral-200
-                      dark:bg-neutral-800/60 dark:border-neutral-800">
+      <div className="rounded-[28px] px-4 py-4 
+                      bg-white 
+                      dark:bg-neutral-800/60 ">
         
         {/* Başlıq Badge */}
         <div className="inline-flex items-center justify-center px-2 py-2 rounded-lg mb-4

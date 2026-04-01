@@ -4,9 +4,17 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const contacts = [
-  { label: "E-mail", value: "elxanmeherremli9@gmail.com", href: "mailto:elxanmeherremli9@gmail.com" },
+  {
+    label: "E-mail",
+    value: "elxanmeherremli9@gmail.com",
+    href: "mailto:elxanmeherremli9@gmail.com",
+  },
   { label: "Phone", value: "+994 55 492 67 31", href: "tel:+994554926731" },
-  { label: "LinkedIn", value: "in/meherremli", href: "https://linkedin.com/in/meherremli" },
+  {
+    label: "LinkedIn",
+    value: "in/meherremli",
+    href: "https://linkedin.com/in/meherremli",
+  },
 ];
 
 export default function Contact() {
@@ -17,9 +25,9 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="rounded-[28px] shadow-sm px-4 py-4 border
-                   bg-white border-neutral-200
-                   dark:bg-neutral-800/60 dark:border-neutral-800 mb-6"
+        className="rounded-[28px]  px-4 py-4 
+                   bg-white 
+                   dark:bg-neutral-800/60 mb-6 md:mb-18"
       >
         <div className="space-y-2">
           {contacts.map((contact, index) => (
@@ -42,22 +50,27 @@ export default function Contact() {
                 <span className="text-[12px] md:text-[16px] font-semibold text-neutral-800 dark:text-neutral-100">
                   {contact.value}
                 </span>
-                <button className="w-8 h-8 rounded-lg group-hover:w-11 transition-all duration-300 bg-neutral-200/50 dark:bg-neutral-700/50 
+                <button
+                  className="w-8 h-8 rounded-lg group-hover:w-11 transition-all duration-300 bg-neutral-200/50 dark:bg-neutral-700/50 
                                 flex items-center justify-center 
-                                dark:group-hover:bg-neutral-700">
-                  <ArrowRight size={16} className="text-neutral-600 dark:text-neutral-400" />
+                                dark:group-hover:bg-neutral-700"
+                >
+                  <ArrowRight
+                    size={16}
+                    className="text-neutral-600 dark:text-neutral-400"
+                  />
                 </button>
               </div>
             </a>
           ))}
+
+          <div className="text-center">
+            <p className="text-[12px] text-neutral-500 dark:text-neutral-500 font-medium tracking-tight">
+              2026 © Elxan Meherremli
+            </p>
+          </div>
         </div>
       </motion.section>
-
-      <div className="text-center">
-        <p className="text-[12px] text-neutral-500 dark:text-neutral-500 font-medium tracking-tight">
-          2026 © Elxan Meherremli
-        </p>
-      </div>
     </footer>
   );
 }

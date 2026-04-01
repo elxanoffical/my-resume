@@ -12,9 +12,8 @@ export default function Hero() {
       transition={{ duration: 0.5 }}
       className="max-w-[640px] mx-auto px-3 mt-2"
     >
-      <div className="rounded-[28px] px-4 py-5 md:py-4 border shadow-sm
-                      bg-white border-neutral-200
-                      dark:bg-neutral-800/60 dark:border-neutral-800">
+      <div className="rounded-[28px] px-4 py-5 md:py-4  
+                      bg-white dark:bg-neutral-800/60 ">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
 
           <div className="relative w-full h-[300px] md:w-[180px] md:h-[180px] flex-shrink-0">
