@@ -7,7 +7,7 @@ const tools = [
   {
     name: "Framer",
     description: "No-Code Website Builder",
-    icon: "/tools/Framer.svg", // Public qovluğunda bu yolları yaradın
+    icon: "/tools/Framer.svg", 
   },
   {
     name: "Affinity",

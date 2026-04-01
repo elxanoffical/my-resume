@@ -37,8 +37,8 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 rounded-[22px] border border-neutral-100 dark:border-neutral-700/50 
-                         bg-neutral-50/50 dark:bg-neutral-900/20 flex items-center justify-between
-                         hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition-all duration-150 group"
+                          dark:bg-neutral-900/20 flex items-center justify-between
+                         hover:bg-neutral-100/50 dark:hover:bg-neutral-800/50 transition-all duration-150 group"
             >
               {/* Sol tərəf: Etiket */}
               <span className="text-[14px] text-neutral-500 dark:text-neutral-400 font-medium">
