@@ -6,9 +6,24 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArrowLeft, ArrowRight, MapPin, Moon } from "lucide-react";
 import { projectsData } from "@/data/projects";
+import { useLenis } from "lenis/react";
+import { useEffect } from "react";
 
 export default function ProjectPage() {
   const { id } = useParams();
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (lenis) {
+      // immediate: true -> animasiyasız, dərhal yuxarı atır
+      // force: true -> hər ehtimala qarşı skrolu məcbur edir
+      lenis.scrollTo(0, { immediate: true });
+    } else {
+      // Əgər hansısa səbəbdən Lenis hələ yüklənməyibsə, köhnə üsul
+      window.scrollTo(0, 0);
+    }
+  }, [id, lenis]); // id hər dəyişəndə (yeni proyektə keçəndə) işləyəcək
+
   const currentIndex = projectsData.findIndex((p) => p.id === id);
   const project = projectsData[currentIndex];
   const nextProject = projectsData[(currentIndex + 1) % projectsData.length];
@@ -107,14 +122,18 @@ export default function ProjectPage() {
       <div className="space-y-4 mb-2">
         <div className="p-4 rounded-[28px] bg-white dark:bg-neutral-800/60 border border-neutral-100 dark:border-neutral-700/30">
           {/* "Next Project" Badge Style */}
-          <div className="inline-block items-center justify-center px-2 py-2 rounded-lg mb-4 bg-neutral-200 text-neutral-700
-           dark:bg-neutral-700/70 dark:text-neutral-300 text-[12px] md:text-[11px] font-bold tracking-wider">
+          <div
+            className="inline-block items-center justify-center px-2 py-2 rounded-lg mb-4 bg-neutral-200 text-neutral-700
+           dark:bg-neutral-700/70 dark:text-neutral-300 text-[12px] md:text-[11px] font-bold tracking-wider"
+          >
             Next Project
           </div>
 
-          <Link href={`/projects/${nextProject.id}`}>
-            <div className="group flex flex-col p-3 rounded-[22px]  dark:bg-neutral-900/40
-             hover:bg-neutral-100/50 dark:hover:bg-neutral-800/40 transition-all duration-300">
+          <Link href={`/projects/${nextProject.id}`} scroll={true}>
+            <div
+              className="group flex flex-col p-3 rounded-[22px]  dark:bg-neutral-900/40
+             hover:bg-neutral-100/50 dark:hover:bg-neutral-800/40 transition-all duration-300"
+            >
               {/* Şəkil Konteyneri */}
               <div className="w-full relative rounded-[18px] overflow-hidden bg-neutral-200">
                 <Image
@@ -140,7 +159,10 @@ export default function ProjectPage() {
                 </div>
 
                 <button className="w-8 h-8 rounded-lg group-hover:w-11 transition-all duration-300 bg-neutral-200/50 dark:bg-neutral-700/50 flex items-center justify-center">
-                  <ArrowRight size={16} className="text-neutral-600 dark:text-neutral-400" />
+                  <ArrowRight
+                    size={16}
+                    className="text-neutral-600 dark:text-neutral-400"
+                  />
                 </button>
               </div>
             </div>
