@@ -32,8 +32,8 @@ export const projectsData = [
     client: "Azra Studio",
     services: "Web Design, 3D Rendering",
     description: "Modern interior design solutions with a focus on sustainable and ergonomic living spaces.",
-    image: "/project3.png",
-    images: ["/project3.png", "/project3-2.png", "/project3-3.png", "/project3-4.png"]
+    image: "/projects/Addax/addax1.png",
+    images: ["/projects/Addax/addax1.png", "/projects/Addax/addax2.png", "/projects/Addax/addax3.png", "/projects/Addax/addax4.png"]
   },
   {
     id: "okars",
@@ -44,7 +44,7 @@ export const projectsData = [
     client: "Okars Vision",
     services: "E-commerce, Branding",
     description: "Handcrafted eyewear designed for comfort and style, blending traditional techniques with modern aesthetics.",
-    image: "/project4.png",
-    images: ["/project4.png", "/project4-2.png", "/project4-3.png", "/project4-4.png"]
+    image: "/projects/Codevolution/codevolution1.png",
+    images: ["/projects/Codevolution/codevolution1.png", "/projects/Codevolution/codevolution2.png", "/projects/Codevolution/codevolution3.png", "/projects/Codevolution/codevolution4.png"]
   }
 ];

@@ -29,8 +29,8 @@ export default function Hero() {
           <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1">
 
             <div className="flex items-center gap-2 mb-3">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-25"></span>
+              <span className="relative flex h-2 w-2 ">
+                <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-green-500 opacity-60"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
               <span className="text-[12px] font-medium tracking-wide text-neutral-500 dark:text-neutral-400">
