@@ -20,7 +20,7 @@ export default function Projects() {
           Projects
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {projectsData.map((project, index) => (
             <Link key={index} href={`/projects/${project.id}`}>
               <motion.div className="group cursor-pointer border border-neutral-200 dark:border-neutral-700/40 rounded-[22px] p-3 hover:bg-neutral-100/30 hover:dark:bg-neutral-800/20 transition-colors">
@@ -37,7 +37,7 @@ export default function Projects() {
                     <h3 className="text-[15px] font-semibold text-neutral-800 dark:text-neutral-100">{project.title}</h3>
                     <p className="text-[13px] text-neutral-500 dark:text-neutral-400">{project.category}</p>
                   </div>
-                  <div className="w-10 h-10 md:w-8 md:h-8 rounded-lg flex items-center justify-center bg-neutral-100 dark:bg-neutral-700/50 group-hover:w-12 transition-all duration-300">
+                  <div className="w-10 h-10 md:w-8 md:h-8 rounded-lg flex items-center justify-center bg-neutral-200/60 dark:bg-neutral-700/50 group-hover:w-12 transition-all duration-300">
                     <ArrowRight size={16} className="text-neutral-600 dark:text-neutral-300" />
                   </div>
                 </div>
