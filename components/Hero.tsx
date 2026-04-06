@@ -59,19 +59,17 @@ export default function Hero() {
                 <Download size={14} strokeWidth={1.5} />
                 Download CV
               </a>
-              <button
-                onClick={() =>
-                  (window.location.href = "elxanmeherremli9@gmail.com")
-                }
+              <a
+                href="mailto:elxanmeherremli9@gmail.com"
                 className="flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-full text-[14px] md:text-[12px] font-medium
-                           border border-neutral-200 dark:border-neutral-700
-                           bg-white hover:bg-neutral-50 cursor-pointer
-                           dark:bg-neutral-900/20 dark:hover:bg-neutral-700/40
-                           transition-all active:scale-95 text-neutral-700 dark:text-neutral-200"
+             border border-neutral-200 dark:border-neutral-700
+             bg-white hover:bg-neutral-50 cursor-pointer
+             dark:bg-neutral-900/20 dark:hover:bg-neutral-700/40
+             transition-all active:scale-95 text-neutral-700 dark:text-neutral-200"
               >
                 <Mail size={14} strokeWidth={1.5} />
                 Get in Touch
-              </button>
+              </a>
             </div>
           </div>
         </div>
