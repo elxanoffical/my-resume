@@ -5,18 +5,20 @@ import { Calendar, MapPin } from "lucide-react";
 
 const educationData = [
   {
-    school: "Bern University of Applied Sciences",
-    degree: "Bachelor of Arts / Visual Communication",
-    period: "September 2016 - June 2020",
-    location: "Bern, CH",
-    description: "Studied Visual Communication (BA) in Bern, developing skills in graphic design, branding, and visual systems.",
+    school: "Adams Digital Agency",
+    degree: "Full Stack Development Program",
+    period: "2024 - 2025",
+    location: "Baku, AZ",
+    description:
+      "Deepened expertise in Next.js, Node.js, and MongoDB through complex projects. Focused on building REST/GraphQL APIs, implementing JWT-based authentication with NextAuth.js, and managing dynamic content using Strapi CMS.",
   },
   {
-    school: "International School of Bern",
-    degree: "University Preparatory Education",
-    period: "September 2010 - June 2016",
-    location: "Bern, CH",
-    description: "Completed upper secondary education at a Gymnasium in Bern, Switzerland, with a strong academic and university-preparatory focus.",
+    school: "IT Innovation Academy",
+    degree: "Front-end Development Course",
+    period: "2023 - 2024",
+    location: "Baku, AZ",
+    description:
+      "Mastered fundamental web technologies including HTML, CSS, JavaScript, and React. Specialized in component-based architecture, state management, and modern UI/UX best practices while working on real-world projects under professional mentorship.",
   },
 ];
 
@@ -29,22 +31,25 @@ export default function Education() {
       transition={{ duration: 0.5, delay: 0.5 }}
       className="max-w-[640px] mx-auto px-3 mb-2"
     >
-      <div className="rounded-[28px] px-4 py-4 
+      <div
+        className="rounded-[28px] px-4 py-4 
                       bg-white 
-                      dark:bg-neutral-800/60 ">
-        
+                      dark:bg-neutral-800/60 "
+      >
         {/* Başlıq Badge */}
-        <div className="inline-flex items-center justify-center px-2 py-2 rounded-lg mb-4
+        <div
+          className="inline-flex items-center justify-center px-2 py-2 rounded-lg mb-4
                         bg-neutral-200 text-neutral-700
                         dark:bg-neutral-700/70 dark:text-neutral-300
-                        text-[12px] md:text-[11px] font-bold tracking-wider">
+                        text-[12px] md:text-[11px] font-bold tracking-wider"
+        >
           Education
         </div>
 
         {/* Təhsil Siyahısı */}
         <div className="space-y-2">
           {educationData.map((edu, index) => (
-            <div 
+            <div
               key={index}
               className="p-4 rounded-[22px] border border-neutral-200 dark:border-neutral-700/50 
                          dark:bg-neutral-900/20"
