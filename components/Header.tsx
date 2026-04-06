@@ -18,6 +18,7 @@ export default function Header() {
           minute: "2-digit",
           second: "2-digit",
           hour12: true,
+          timeZone: "Asia/Baku",
         })
       )
     }
@@ -37,7 +38,7 @@ export default function Header() {
         <div className="flex items-center gap-1.5 text-[13.5px] font-medium
                         text-neutral-500 dark:text-neutral-400">
           <MapPin size={16} strokeWidth={2.5}/>
-          <span>Zurich, Switzerland</span>
+          <span>Baku, Azerbaijan</span>
         </div>
 
         <div className="flex items-center gap-2 text-[13px] font-medium
