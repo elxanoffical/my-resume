@@ -29,17 +29,16 @@ export default function Overview() {
                         text-neutral-600 dark:text-neutral-300/80"
         >
           <p>
-            Senior Designer with a strong background in brand and digital
-            design, currently based in Zurich. Experienced in creating projects
-            from early concept through to final delivery, combining strategic
-            thinking with a hands-on design approach.
+            Frontend Developer based in Baku, dedicated to building clean and
+            functional web applications. I focus on creating responsive
+            interfaces that provide a seamless user experience across all
+            devices, taking projects from initial ideas to finished products.
           </p>
           <p>
-            I enjoy shaping visual identities, defining design systems, and
-            guiding teams to produce work that is both conceptually strong and
-            meticulously crafted. With experience in agency environments, I work
-            closely with clients and collaborators to create meaningful,
-            long-lasting design solutions.
+            I am passionate about writing organized code and developing simple
+            yet effective digital solutions. My goal is to combine technical
+            skills with a strong eye for detail to build websites that are both
+            visually appealing and easy to use.
           </p>
         </div>
       </div>
